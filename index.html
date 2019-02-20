@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+  <title>Survey Form</title>
+</head>
+
+<h1 id="title">Survey Form</h1>
+<p id="description">Description of form</p>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<form id="survey-form">
+
+  <label for="name" id="name-label">name label</label>
+  <label for="email" id="email-label">email label</label>
+  <label for="number" id="number-label">number label</label>
+
+  <input type="text" id="name" required placeholder="place holder">
+  <input type="email" id="email" required placeholder="placeholder@example.com">
+  <input type="number" id="number" min="1" max="1000000" placeholder="1">
+
+  <select id="dropdown">
+    <option value="foo">foo</option>
+    <option value="bar">bar</option>
+  </select>
+
+  <input type="radio" id="radio-1" name="radiogroup" value="foo" checked>
+  <input type="radio" id="radio-2" name="radiogroup" value="bar">
+
+  <input type="checkbox" id="checkbox-1" value="foo">
+  <input type="checkbox" id="checkbox-2" value="bar">
+
+  <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+
+  <button id="submit"></button>
+  
+</form>
