@@ -1,6 +1,7 @@
 <!doctype html>
 <head>
   <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <h1 id="title">Survey Form</h1>
@@ -8,48 +9,56 @@
 
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-<form id="survey-form">
+<form id="survey-form" onsubmit="return false;">
 
   <div class="form-line">
-    <label for="name" id="name-label">name label</label>
-    <input type="text" id="name" required placeholder="place holder">
+    <div class="form-label"><label for="name" id="name-label">name label</label></div>
+    <div class="form-field"><input type="text" id="name" required placeholder="place holder"></div>
   </div>
+
   <div class="form-line">
-    <label for="email" id="email-label">email label</label>
-    <input type="email" id="email" required placeholder="placeholder@example.com">
+    <div class="form-label"><label for="email" id="email-label">email label</label></div>
+    <div class="form-field"><input type="email" id="email" required placeholder="placeholder@example.com"></div>
   </div>
+
   <div class="form-line">
-    <label for="number" id="number-label">number label</label>
-    <input type="number" id="number" min="1" max="1000000" placeholder="1">
+    <div class="form-label"><label for="number" id="number-label">number label</label></div>
+    <div class="form-field"><input type="number" id="number" min="1" max="1000000" placeholder="1"></div>
   </div>
+
   <div class="form-line">
-    <label for="dropdown">dropdown label</label>
-    <select id="dropdown">
+    <div class="form-label"><label for="dropdown">dropdown label</label></div>
+    <div class="form-field"><select id="dropdown">
       <option value="foo">foo</option>
       <option value="bar">bar</option>
     </select>
+    </div>
   </div>
+
   <div class="form-line">
-    <span class="label">label text</span>
-    <input type="radio" id="radio-1" name="radiogroup" value="foo" checked>
+    <div class="form-label"><span class="label">label text</span></div>
+    <div class="form-field"><input type="radio" id="radio-1" name="radiogroup" value="foo" checked>
     <label for="radio-1">radio-1 label</label>
 
     <input type="radio" id="radio-2" name="radiogroup" value="bar">
     <label for="radio-2">radio-2 label</label>
+    </div>
   </div>
-  <div class="form-line">
-    <span class="label">label text</span>
 
-    <input type="checkbox" id="checkbox-1" value="foo">
+  <div class="form-line">
+    <div class="form-label"><span class="label">label text</span></div>
+
+    <div class="form-field"><input type="checkbox" id="checkbox-1" value="foo">
     <label for="checkbox-1">checkbox-1 label</label>
 
     <input type="checkbox" id="checkbox-2" value="bar">
     <label for="checkbox-2">checkbox-2 label</label>
+    </div>
   </div>
 
   <div id="textarea-container">
-    <span class="label">label text</span>
-    <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+    <div class="form-label"><span class="label">label text</span></div>
+    <div class="form-field"><textarea name="textarea" id="textarea" cols="30" rows="10"></textarea></div>
   </div>
 
   <div id="submit-container">

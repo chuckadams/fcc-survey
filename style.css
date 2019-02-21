@@ -1,0 +1,15 @@
+#survey-form {
+    line-height: 2em;
+}
+
+.form-label {
+    display: inline-block;
+    width: 30%;
+    text-align: right
+}
+
+.form-field {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
