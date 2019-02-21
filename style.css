@@ -1,3 +1,12 @@
+body {
+    background-color: #ccc;
+    background-image: url(./octopaper.jpg);
+    background-blend-mode: screen;
+    background-repeat: repeat;
+    width: 100vw;
+    height: 100vw;
+}
+
 #survey-form {
     line-height: 2em;
 }
