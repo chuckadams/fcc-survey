@@ -6,65 +6,98 @@
 </head>
 <div id="content">
 
-  <h1 id="title">Survey Form</h1>
-  <p id="description">Description of form</p>
+  <h1 id="title">Elder God Processing Survey</h1>
+  <p id="description">In order to more efficiently process both devotees and unbelievers
+    upon his awakening, the <a href="https://lovecraft.fandom.com/wiki/Cthulhu">Dread Lord of your puny planet</a>
+    has requested that all <s>pathetic chattering apes</s> humans partake in this short survey.</p>
 
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
   <form id="survey-form" onsubmit="return false;">
 
     <div class="form-line">
-      <div class="form-label"><label for="name" id="name-label">name label</label></div>
-      <div class="form-field"><input type="text" id="name" required placeholder="place holder"></div>
+      <div class="form-label"><label for="name" id="name-label">Your name</label></div>
+      <div class="form-field"><input type="text" id="name" required placeholder="Name"> *</div>
     </div>
 
     <div class="form-line">
-      <div class="form-label"><label for="email" id="email-label">email label</label></div>
-      <div class="form-field"><input type="email" id="email" required placeholder="placeholder@example.com"></div>
+      <div class="form-label"><label for="email" id="email-label">Your email</label></div>
+      <div class="form-field"><input type="email" id="email" required placeholder="email@example.com"> *</div>
     </div>
 
     <div class="form-line">
-      <div class="form-label"><label for="number" id="number-label">number label</label></div>
+      <div class="form-label"><label for="number" id="number-label">Additional sacrifices offered</label></div>
       <div class="form-field"><input type="number" id="number" min="1" max="1000000" placeholder="1"></div>
     </div>
 
     <div class="form-line">
-      <div class="form-label"><label for="dropdown">dropdown label</label></div>
-      <div class="form-field"><select id="dropdown">
-        <option value="foo">foo</option>
-        <option value="bar">bar</option>
-      </select>
+      <div class="form-label">
+        <label for="dropdown">I would prefer a:</label>
+      </div>
+      <div class="form-field">
+        <select id="dropdown">
+          <option value="slow">Slow Agonizing Death</option>
+          <option value="slow-boring">Slow Tedious Death</option>
+          <option value="quick" disabled>Quick Death</option>
+        </select>
       </div>
     </div>
 
     <div class="form-line">
-      <div class="form-label"><span class="label">label text</span></div>
-      <div class="form-field"><input type="radio" id="radio-1" name="radiogroup" value="foo" checked>
-        <label for="radio-1">radio-1 label</label>
+      <div class="form-label">
+        <span class="label">My preferred method of execution:</span>
+      </div>
+      <div class="form-field">
 
-        <input type="radio" id="radio-2" name="radiogroup" value="bar">
-        <label for="radio-2">radio-2 label</label>
+        <div class="radio-item">
+          <input type="radio" id="radio-1" name="radiogroup" value="evisceration">
+          <label for="radio-1">Evisceration</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="radio-2" name="radiogroup" value="dismemberment">
+          <label for="radio-2">Dismemberment</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="radio-3" name="radiogroup" value="decapitation">
+          <label for="radio-3">Decapitation</label>
+        </div>
+
+        <div class="radio-item">
+          <input type="radio" id="radio-4" name="radiogroup" value="suffocation">
+          <label for="radio-4">Suffocation</label>
+        </div>
+
       </div>
     </div>
 
     <div class="form-line">
-      <div class="form-label"><span class="label">label text</span></div>
+      <div class="form-label"><span class="label">Worshipped God(s)</span></div>
 
-      <div class="form-field"><input type="checkbox" id="checkbox-1" value="foo">
-        <label for="checkbox-1">checkbox-1 label</label>
+      <div class="form-field"><input type="checkbox" id="checkbox-1" value="Azathoth">
+        <label for="checkbox-1">Azathoth</label>
 
-        <input type="checkbox" id="checkbox-2" value="bar">
-        <label for="checkbox-2">checkbox-2 label</label>
+        <input type="checkbox" id="checkbox-2" value="Nyarlothep">
+        <label for="checkbox-2">Nyarlothep</label>
+
+        <input type="checkbox" id="checkbox-3" value="Yog-Shoggoth">
+        <label for="checkbox-3">Yog-Shoggoth</label>
+
+        <input type="checkbox" id="checkbox-4" value="Other">
+        <label for="checkbox-4">Other</label>
+
       </div>
     </div>
 
     <div id="textarea-container">
-      <div class="form-label"><span class="label">label text</span></div>
+      <div class="form-label"><span class="label">Please enter any other prayers, invocations, or pleas for mercy</span>
+      </div>
       <div class="form-field"><textarea name="textarea" id="textarea" cols="30" rows="10"></textarea></div>
     </div>
 
     <div id="submit-container">
-      <button id="submit">button</button>
+      <button id="submit">Fhtagn</button>
     </div>
   </form>
 </div>

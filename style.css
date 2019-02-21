@@ -5,6 +5,29 @@ body {
     background-repeat: repeat;
 }
 
+@media screen and (max-width: 576px) {
+    .form-line {
+        display: flex;
+        flex-direction: column;
+        /*border: 1px solid red;*/
+    }
+
+    .form-label {
+        min-width: 100%;
+        text-align: left;
+        /*border: 1px solid green;*/
+
+    }
+    .form-field {
+        min-width: 100%;
+        /*border: 1px solid blue;*/
+    }
+
+    select {
+        width: 100%;
+    }
+}
+
 #survey-form {
     line-height: 2em;
 }
@@ -12,11 +35,18 @@ body {
 .form-label {
     display: inline-block;
     width: 30%;
-    text-align: right
+    text-align: right;
+    vertical-align: top;
+    line-height: 1.5em;
 }
 
 .form-field {
     display: inline-block;
     width: 50%;
     text-align: left;
+}
+
+#submit {
+    font-size: 1.8rem;
+    font-weight: bold;
 }
