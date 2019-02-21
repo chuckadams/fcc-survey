@@ -5,33 +5,6 @@ body {
     background-repeat: repeat;
 }
 
-@media screen and (max-width: 576px) {
-    .form-line {
-        display: flex;
-        flex-direction: column;
-        /*border: 1px solid red;*/
-    }
-
-    .form-label {
-        min-width: 100%;
-        text-align: left !important;
-        /*border: 1px solid green;*/
-
-    }
-    .form-field {
-        min-width: 100%;
-        /*border: 1px solid blue;*/
-    }
-
-    select {
-        width: 100%;
-    }
-}
-
-#survey-form {
-    line-height: 2em;
-}
-
 .form-label {
     display: inline-block;
     width: 30%;
@@ -49,4 +22,27 @@ body {
 #submit {
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 576px) {
+
+    .form-line {
+        margin-bottom: 1em;
+    }
+
+    .form-label {
+        min-width: 100%;
+        text-align: left;
+        /*border: 1px solid green;*/
+
+    }
+    .form-field {
+        min-width: 100%;
+        /*border: 1px solid blue;*/
+    }
+
+    select {
+        width: 100%;
+    }
 }
